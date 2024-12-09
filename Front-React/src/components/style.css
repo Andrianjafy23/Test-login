@@ -1,4 +1,3 @@
-/* Conteneur principal */
 .Login {
   max-width: 400px;
   margin: auto;
@@ -10,34 +9,30 @@
   margin-top: 50px;
 }
 
-/* Conteneur pour l'input et l'icône */
 .input-container {
   position: relative;
   width: 100%;
   margin-bottom: 20px;
 }
 
-/* Style pour l'icône */
 .input-icon {
   position: absolute;
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  color: #888; /* Couleur de l'icône */
+  color: #888; 
   font-size: 16px;
 }
 
-/* Style pour l'input */
 .log {
   width: 100%;
-  padding: 10px 10px 10px 35px; /* Ajout de padding pour éviter le chevauchement avec l'icône */
+  padding: 10px 10px 10px 35px; 
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box; /* Assure que le padding est pris en compte */
+  box-sizing: border-box; 
 }
 
-/* Style pour le label */
 .lab {
   font-weight: bold;
   text-align: left;
@@ -45,12 +40,12 @@
   margin-bottom: 5px;
 }
 
-/* Style pour la checkbox */
+
 .afficher {
   margin-right: 5px;
 }
 
-/* Bouton de soumission */
+
 .se {
   background-color:  #888;
   color: white;
@@ -63,8 +58,8 @@
 
 .se:hover {
   background-color:  #2b3776;
+}
 
-/* Alignement centré pour l'image */
 .N img {
   display: block;
   margin: auto;

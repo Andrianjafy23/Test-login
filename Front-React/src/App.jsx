@@ -3,15 +3,20 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="*" element={<Login />} /> {/* Si l'utilisateur tente d'accéder à une route non définie */}
+    </Routes>
   );
-}
+};
 
-export default App;
+const Root = () => (
+  <Router>  {/* Enveloppement du composant App avec le Router */}
+    <App />
+  </Router>
+);
+
+export default Root;
